@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="team_3eu.mjclunch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        tools:targetApi="n">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".nextpage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".simpleone"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Simple_two"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".normal"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity android:name=".NaverMap"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity
+            android:name=".FragmentPage"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".normal" />
+        </activity>
+
+        <activity
+            android:name=".Choice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ct_List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Naver_map_api"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".NormalView"></activity>
+    </application>
+
+</manifest>

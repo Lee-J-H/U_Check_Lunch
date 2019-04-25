@@ -41,7 +41,7 @@ public class Naver_map_api extends NMapActivity {
             mMapView = new NMapView(context);
             nMapResourceProvider = new NMapViewerResourceProvider(context);
             mapOverlayManager = new NMapOverlayManager(context, mMapView, nMapResourceProvider);
-            mMapView.setClientId(Client_ID); // 클라이언트 아이디 값 설정
+            mMapView.setNcpClientId(Client_ID); // 클라이언트 아이디 값 설정
             mMapView.setClickable(clickable);
             mMapView.setEnabled(true);
             mMapView.setFocusable(true);

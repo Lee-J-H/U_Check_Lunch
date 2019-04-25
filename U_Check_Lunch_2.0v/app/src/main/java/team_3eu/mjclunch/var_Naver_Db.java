@@ -75,6 +75,7 @@ public class var_Naver_Db {
     static Boolean Mode_Nor_Sim=null; // 헨들러 심플 모드냐 노말 모드냐  t 심플 f 노말
 
 
-    static String Client_ID = "Epa7_8HPQo_tbJr68T9Y";
+    //static String Client_ID = "Epa7_8HPQo_tbJr68T9Y";
+    static String Client_ID = "ypifd9msp8";
 
 }

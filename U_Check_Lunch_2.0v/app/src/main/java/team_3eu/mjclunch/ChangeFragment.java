@@ -10,7 +10,7 @@ public class ChangeFragment {
     public static void getDB(String menu, Context context){
         DB_Android DBA = new DB_Android(context);
         DB_Android.GetData Data = new DB_Android.GetData();
-        Data.execute("http://3eutest.cf/retest.php", "0", menu);  // 에뮬-"10.0.2.2
+        Data.execute("http://34.74.154.52/retest.php", "0", menu);  // 에뮬-"10.0.2.2
     }
 
     public static void setDB() {

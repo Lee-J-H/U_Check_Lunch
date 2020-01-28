@@ -30,7 +30,7 @@ public class DB_Android {
     public static void loadImage(String id, String mode, String imgNum) {
         DB_Image DBI = new DB_Image(mContext);
         DB_Image.ResImage rImage = new DB_Image.ResImage();
-        rImage.execute("http://3eutest.cf/images/i_" + id + ".jpg", mode, imgNum);
+        rImage.execute("http://34.74.154.52/images/i_" + id + ".jpg", mode, imgNum);
     }
 
     public static class GetData extends AsyncTask<String, Void, String> {
@@ -100,8 +100,8 @@ public class DB_Android {
                 HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
 
 
-                httpURLConnection.setReadTimeout(5000);
-                httpURLConnection.setConnectTimeout(5000);
+                httpURLConnection.setReadTimeout(10000);
+                httpURLConnection.setConnectTimeout(10000);
                 httpURLConnection.setRequestMethod("POST");
                 //httpURLConnection.setDoOutput(true);
                 httpURLConnection.setDoInput(true);

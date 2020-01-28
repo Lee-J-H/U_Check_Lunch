@@ -68,7 +68,7 @@ public class Simple_two extends NMapActivity {
         if (resnum != 0) id = Integer.toString(selectTime(resnum));
         DB_Android DBA = new DB_Android(mContext);
         GetData Data = new GetData();
-        Data.execute("http://3eutest.cf/retest.php", id, selMenu);  // 에뮬-"10.0.2.2
+        Data.execute("http://34.74.154.52/retest.php", id, selMenu);  // 에뮬-"10.0.2.2
         resback.bringToFront();
         lin1.bringToFront();
     }
@@ -138,34 +138,34 @@ public class Simple_two extends NMapActivity {
                     break;
                 case Faild_internet:
                     View.OnClickListener DialogListener = new View.OnClickListener() {
-                        public void onClick(View v) {
-                            if(progressDialog.isShowing())progressOFF();
-                            dialog1.dismiss();
-                            if (selMenu=="Simple") {
-                                GetPointer GPR = new GetPointer(DB_Android.mContext);
-                                Naver_map_api.init.in_inte(DB_Android.mContext);
-                                DB_Android DBA = new DB_Android(DB_Android.mContext);
-                                DB_Android.GetData Data = new DB_Android.GetData();
-                                Data.execute("http://3eutest.cf/retest.php", id, selMenu);
-                            } else if (dbSize.size()==0) {
-                                selMenu="Normal";
-                                getDB("전체", DB_Android.mContext);
-                            } else if (!(id=="0") && !(dbSize.size()==0)) {
-                                GetPointer GPR = new GetPointer(DB_Android.mContext);
-                                Naver_map_api.init.in_inte(DB_Android.mContext);
-                                DB_Android DBA = new DB_Android(DB_Android.mContext);
-                                DB_Android.GetData Data = new DB_Android.GetData();
-                                Data.execute("http://3eutest.cf/retest.php", id, "Normal");
-                            }
+                    public void onClick(View v) {
+                        if(progressDialog.isShowing())progressOFF();
+                        dialog1.dismiss();
+                        if (selMenu=="Simple") {
+                            GetPointer GPR = new GetPointer(DB_Android.mContext);
+                            Naver_map_api.init.in_inte(DB_Android.mContext);
+                            DB_Android DBA = new DB_Android(DB_Android.mContext);
+                            DB_Android.GetData Data = new DB_Android.GetData();
+                            Data.execute("http://34.74.154.52/retest.php", id, selMenu);
+                        } else if (dbSize.size()==0) {
+                            selMenu="Normal";
+                            getDB("전체", DB_Android.mContext);
+                        } else if (!(id=="0") && !(dbSize.size()==0)) {
+                            GetPointer GPR = new GetPointer(DB_Android.mContext);
+                            Naver_map_api.init.in_inte(DB_Android.mContext);
+                            DB_Android DBA = new DB_Android(DB_Android.mContext);
+                            DB_Android.GetData Data = new DB_Android.GetData();
+                            Data.execute("http://34.74.154.52/retest.php", id, "Normal");
                         }
-                    };
-                    dialog1 = new Mydialog(DB_Android.mContext,
-                            "인터넷 연결을 확인해주세요", // 내용
-                            DialogListener); // 왼쪽 버튼 이벤트
-                    dialog1.setCancelable(false);
-                    dialog1.getWindow().setGravity(Gravity.CENTER);
-                    dialog1.show();
-                    break;
+                    }
+                };
+                dialog1 = new Mydialog(DB_Android.mContext,
+                        "인터넷 연결을 확인해주세요", // 내용
+                        DialogListener); // 왼쪽 버튼 이벤트
+                dialog1.setCancelable(false);
+                dialog1.getWindow().setGravity(Gravity.CENTER);
+                dialog1.show();
+                break;
             }
         }
     };

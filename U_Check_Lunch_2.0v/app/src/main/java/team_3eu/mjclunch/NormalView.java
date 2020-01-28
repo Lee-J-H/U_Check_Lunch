@@ -43,7 +43,7 @@ public class NormalView extends NMapActivity {
 
         DB_Android DBA = new DB_Android(mContext);
         DB_Android.GetData Data = new DB_Android.GetData();
-        Data.execute("http://3eutest.cf/retest.php", id, "Normal");
+        Data.execute("http://34.74.154.52/retest.php", id, "Normal");
 
 
         img_nor_view = (ImageView) findViewById(R.id.frame_image);

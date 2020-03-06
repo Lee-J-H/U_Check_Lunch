@@ -68,7 +68,7 @@ public class Simple_two extends NMapActivity {
         if (resnum != 0) id = Integer.toString(selectTime(resnum));
         DB_Android DBA = new DB_Android(mContext);
         GetData Data = new GetData();
-        Data.execute("http://34.74.154.52/retest.php", id, selMenu);  // 에뮬-"10.0.2.2
+        Data.execute("http://18.222.11.106/retest.php", id, selMenu);  // 에뮬-"10.0.2.2
         resback.bringToFront();
         lin1.bringToFront();
     }
@@ -146,7 +146,7 @@ public class Simple_two extends NMapActivity {
                             Naver_map_api.init.in_inte(DB_Android.mContext);
                             DB_Android DBA = new DB_Android(DB_Android.mContext);
                             DB_Android.GetData Data = new DB_Android.GetData();
-                            Data.execute("http://34.74.154.52/retest.php", id, selMenu);
+                            Data.execute("http://18.222.11.106/retest.php", id, selMenu);
                         } else if (dbSize.size()==0) {
                             selMenu="Normal";
                             getDB("전체", DB_Android.mContext);
@@ -155,7 +155,7 @@ public class Simple_two extends NMapActivity {
                             Naver_map_api.init.in_inte(DB_Android.mContext);
                             DB_Android DBA = new DB_Android(DB_Android.mContext);
                             DB_Android.GetData Data = new DB_Android.GetData();
-                            Data.execute("http://34.74.154.52/retest.php", id, "Normal");
+                            Data.execute("http://18.222.11.106/retest.php", id, "Normal");
                         }
                     }
                 };

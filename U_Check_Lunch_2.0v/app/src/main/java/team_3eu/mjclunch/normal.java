@@ -56,7 +56,7 @@ public class normal extends AppCompatActivity {
 
         ArrayList<String> data = new ArrayList<>(); //이미지 url를 저장하는 arraylist
         for (banner = 1; banner < 3; banner++) {
-            data.add("http://34.74.154.52/images/banners/banner_" + banner + ".png");
+            data.add("http://18.222.11.106/images/banners/banner_" + banner + ".png");
         }
         autoViewPager = (AutoScrollViewPager) findViewById(R.id.autoViewPager);
         AutoScrollAdapter scrollAdapter = new AutoScrollAdapter(this, data);
